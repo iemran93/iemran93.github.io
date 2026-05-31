@@ -11,6 +11,10 @@ showTags: false # Show tags
 showAuthors: false # Hide authors
 showCategories: false # Show categories
 ---
-Hi
+Hi there :wave:
 
-My name is Emran, I'm Full stack developer.
+Hi, I'm Emran — a Full Stack Developer with a passion for building end-to-end solutions.
+
+I work primarily with *Go, JavaScript, Next.js, and Vue* on the frontend and backend, and bring that together with a solid Cloud & DevOps background spanning Kubernetes, AWS, and Infrastructure as Code.
+
+I've built production-grade systems including a full microservices architecture on AWS EKS and a complete self-hosted CI/CD pipeline with GitLab. Check out [Code Keeper](https://github.com/iemran93/code-keeper). as an example of what I build.

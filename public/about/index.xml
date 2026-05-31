@@ -13,7 +13,7 @@
       <link>http://localhost:1313/about/about_me/</link>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/about_me/</guid>
-      <description>&lt;p&gt;Hi&lt;/p&gt;&#xA;&lt;p&gt;My name is Emran, I&amp;rsquo;m Full stack developer.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi there &amp;#x1f44b;&lt;/p&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m Emran — a Full Stack Developer with a passion for building end-to-end solutions.&lt;/p&gt;&#xA;&lt;p&gt;I work primarily with &lt;em&gt;Go, JavaScript, Next.js, and Vue&lt;/em&gt; on the frontend and backend, and bring that together with a solid Cloud &amp;amp; DevOps background spanning Kubernetes, AWS, and Infrastructure as Code.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve built production-grade systems including a full microservices architecture on AWS EKS and a complete self-hosted CI/CD pipeline with GitLab. Check out &#xA;&lt;a href=&#34;https://github.com/iemran93/code-keeper&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code Keeper&lt;/a&gt;&#xA;. as an example of what I build.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

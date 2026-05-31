@@ -2,6 +2,7 @@ baseURL = 'https://iemran93.github.io/'
 locale = 'en-us'
 title = 'Github Portfolio'
 theme = 'nightfall'
+enableEmoji = true
 
 [menu]
   [[menu.header]]
@@ -18,7 +19,8 @@ user = "iemran"
 hostname = "github"
 displayDateFormat = "02.01.2006"
 sitedescription = 'Your website description'
-footerHtml = '2026 - Emran Marei'
+footerHtml = '©2026 - Emran Marei'
+openLinksInNewTab = true
 
 [params.author]
 name = "Emran Marei"
