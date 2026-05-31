@@ -1,0 +1,47 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Github Portfolio'
+theme = 'nightfall'
+
+[menu]
+  [[menu.header]]
+    name = "about"
+    weight = 2
+    url = "about"
+  [[menu.header]]
+    name = "posts"
+    weight = 1
+    url = "posts"
+
+[params]
+user = "iemran"
+hostname = "github"
+displayDateFormat = "02.01.2006"
+sitedescription = 'Your website description'
+footerHtml = '2026 - Emran Marei'
+
+[params.author]
+name = "Emran Marei"
+avatar = "/avatar.png"
+avatarSize = "size-s"
+avatarFirst = false
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/iemran93"
+icon = "fa-brands fa-github"
+target = "_blank"
+aria = "GitHub Profile"
+
+[[params.social]]
+key = 1
+name = "linkedin"
+url = "https://www.linkedin.com/in/emran-marei-4a5a36141/"
+icon = "fa-brands fa-linkedin"
+target = "_blank"
+aria = "Linkedin Profile"
+
+[params.styles]
+color = "orange"
+
