@@ -1,0 +1,157 @@
+@use "../utils/variables" as v;
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid orange;
+  width: 0;
+  display: inline-block;
+  animation:
+    typing 2s steps(30, end) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.header {
+  font-family: v.$fontHeader;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: v.$width;
+}
+
+.headerWrapper {
+  overflow: auto;
+  box-sizing: border-box;
+  background-color: v.$backgroundDarker;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.headerLinks {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+      margin: 5px;
+
+      a {
+        color: v.$white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.terminal,
+.terminal:hover {
+  color: v.$white;
+  text-decoration: none;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  display: none;
+  padding: 10px 4px;
+}
+
+.hamb-line {
+  background: v.$white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+/* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+  background: v.$white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked~.headerLinks {
+  max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: v.$backgroundDark;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hamb {
+    display: block;
+  }
+}
